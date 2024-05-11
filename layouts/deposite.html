@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/new_style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/home.css" />
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/sample.js"></script>
+    <!-- deposite css -->
+    <style>
+      .small_slider_height swiper-slide {
+        width: 107px !important;
+        height: 160px;
+      }
+      .yellow_border_none swiper-slide img {
+        border: none;
+      }
+      .home-custom-hight {
+        height: auto;
+        overflow: auto;
+      }
+      .slider-main.ban-livecasino swiper-slide img {
+        border-radius: 10px;
+      }
+      .slider-main.home-banner.ban-livecasino swiper-container {
+        margin: 5px -7px 2px 0 !important;
+      }
+    
+
+      a.btn.sm-btn-yellow.d-flex.align-items-center.justify-content-center.rounded-pill.px-3.dep_btn {
+        width: 113px;
+        height: 37px;
+        display: flex !important;
+        font-style: italic;
+        border: 2px solid #fff;
+      }
+
+      .d-flex.flex-wrap.justify-content-center.w-100.mb-2.dep_btn
+        button.btn.btn-sm.btn-grey.fw-600.fs-10.me-1.mb-2.px-1 {
+        background: #29243a !important;
+        border: 1px solid #787878;
+      }
+      .deposit_button {
+        width: 116px;
+        /* / height: 22px; / */
+        border: none;
+        border-radius: 3px;
+      }
+      .yellow {
+        background-color: #f2ff00;
+      }
+      .bg_transparent_grey {
+        background-color: #3a3745ed;
+      }
+      .br-g {
+        border: 1px solid #54535f;
+      }
+      .table.table.table-bordered.table-sm.table-bordered-cus.deposit_table td {
+        padding: 7px;
+        background-color: #d9d9d9;
+        border: 1px solid #979797;
+      }
+      .table.table.table-bordered.table-sm.table-bordered-cus.deposit_table th {
+        border: 1px solid #0c0c0c;
+      }
+      .text-dark_red {
+        color: red !important;
+      }
+   
+  /* CSS for sticky header */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    transition: top 0.3s;
+  }
+  .h-34{
+        height: 33px;
+      }
+  </style>
+      <!-- deposite css end-->
+  </head>
+  <body>
+     <div class="container container-xs home-bg position-relative">
+      <div
+      class="home-header d-flex justify-content-between align-items-center pt-4 z-3 page-header"
+    >
+      <a
+        href="deposite.html"
+        class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center justify-content-center"
+      >
+        <img src="../img/icon/icon-deposit.png" width="14" />
+        <span class="ms-2 pl-5">Deposit</span>
+      </a>
+      <a href="./home.html">
+        <img
+        src="../img/home-x-logo.png"
+        class="logo_xnew position-relative" 
+      />
+      </a>
+     
+      <a
+        href="withdrawal.html"
+        class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center justify-content-center"
+      >
+        <img
+          src="../img/icon/icon-withdrawal.png"
+          width="14"
+          style="color: white"
+        />
+        <span class="ms-2">Withdrawal</span>
+      </a>
+    </div>
+    <div class="home-header-bg-area"></div>
+   
+
+    <div
+    class="container container-xs  position-relative overflow-x_hidden p-0"
+  >
+        <div class="text-white fs-20 fw-500 my-3">Select Payment Method</div>
+        <div class="d-flex flex-wrap justify-content-center w-100 mb-2 dep_btn">
+          <div class="d-flex justify-content-around w-100 mb-2 dep_btn">
+            <div>
+              <button
+                class="deposit_button fs-14 fw-700 text-white bg_transparent_grey br-g h-34"
+              >
+                Bank
+              </button>
+            </div>
+            <div>
+              <button class="deposit_button yellow fs-14 fw-700 h-34">UPI</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="d-flex justify-content-center mt-4 pt-1">
+          <img
+            src="../img/deposit/img1.png"
+            alt=""
+            class="w-75 px-3 py-0 mb-0"
+          />
+        </div>
+        <div class="my-5">
+          <label
+            for="enterAmount"
+            class="form-label text-white fs-14 fw-500 mb-0"
+            >Enter Amount</label
+          >
+          <input
+            type="text"
+            value=" ₹ 10,000"
+            class="form-control form-control-cus-pay fs-20 fw-600"
+            id="enterAmount"
+          />
+        </div>
+        <div class="d-flex justify-content-center my-5">
+          <a
+            href="./bankDeposite.html"
+            class="btn sm-btn-yellow d-flex align-items-center justify-content-center rounded-pill px-3 dep_btn"
+          >
+            <span class="fs-19 fw-900 lh-1">Next</span>
+          </a>
+        </div>
+        <div class="my-4">
+          <h3 class="text-white fs-16 fs-700">Select Amount</h3>
+          <div class="row g-2 my-1">
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">500</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">1,000</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">3,000</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">5,000</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center active">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">10,000</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">25,000</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">50,000</span>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="card2 py-3 d-flex justify-content-center">
+                <span>
+                  <img src="../img/icon/icon-inr.svg" class="icon-inr" />
+                </span>
+                <span class="fw-700">1,00,000</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="table-responsive pt-3">
+          <table
+            class="table table-bordered table-sm table-bordered-cus deposit_table"
+          >
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Time</th>
+                <th>File</th>
+                <th>UTR No.</th>
+                <th>Remark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="text-center">1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center">2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center">3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center">4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="text-center">5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div
+          class="pe-2 py-3 ps-0 border border-3 border-danger mt-4"
+          style="background-color: #d9d9d9"
+        >
+          <div class="text-center text-dark_red fw-600 mb-2 fs-16 mt-3">
+            RULES
+          </div>
+          <div>
+            <ul class="fs-10 text-black fs-14">
+              <li class="fw-500 mb-2">
+                Transfer the amount through our safe payment gateway
+              </li>
+              <li class="fw-500 mb-2">
+                Please make sure the payment details that you have entered is
+                correct as they may change from time to time.
+              </li>
+              <li class="fw-500 mb-2">
+                Sikanderpayx will not be responsible for mony deposited in old,
+                inactive or closed accounts
+              </li>
+              <li class="fw-500 mb-2">Click on pay</li>
+              <li class="fw-500 mb-2">
+                The amount will be deposited to your account intantly
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bg-area"></div>
+      </div>
+  
+
+      <div class="footer">
+        <div class="footer-tab flex-grow-1 after-line">
+          <a href="main_new_page.html" class="tab-action">
+            <img src="../img/icon/icon-x.svg" class="tab-icon" />
+            <div class="tab-label">Home</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 after-line">
+          <a href="./inplay.html" class="tab-action">
+            <img src="../img/icon/icon-play.svg" class="tab-icon" />
+            <div class="tab-label">In-Play</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1">
+          <a href="./refer&earn.html" class="tab-action">
+            <img src="../img/icon/icon-refer.svg" class="tab-icon" />
+            <div class="tab-label">Refer &amp; Earn</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 before-line">
+          <a href="./livecasino.html" class="tab-action">
+            <img src="../img/icon//icon-casino.svg" class="tab-icon" />
+            <div class="tab-label">Casino</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 before-line">
+          <a href="menu.html" class="tab-action">
+            <img src="../img/icon/icon-menu-bar-active.svg" class="tab-icon" />
+            <div class="tab-label" style="margin-bottom: -8px">Menu</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <script>
+    var TrandingSlider = new Swiper(".tranding-slider", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      loop: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2.5,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script>
+    const swiper = new Swiper(".swiper.second", {
+      // Optional parameters
+      loop: true,
+      centeredSlides: true,
+      // Navigation arrows
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+        // when window width is >= 320px
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        // when window width is >= 480px
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        // when window width is >= 640px
+        1280: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
+  
+
+  <script>
+    // First, get a reference to your Swiper instance
+    var mySwiper = document.querySelector(".mySwiper").swiper;
+
+    // Then, use the slideTo method to activate the second slide (index 1)
+    mySwiper.slideTo(1); // Index starts from 0, so 1 represents the second slide
+  </script>
+
+<script>
+
+const header = document.querySelector(".page-header");
+const toggleClass = "is-sticky";
+
+window.addEventListener("scroll", () => {
+const currentScroll = window.pageYOffset;
+if (currentScroll > 10) {
+  header.classList.add(toggleClass);
+} else {
+  header.classList.remove(toggleClass);
+}
+});
+
+</script>
+
+  </body>
+ 
+</html>
