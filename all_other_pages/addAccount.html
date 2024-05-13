@@ -1,0 +1,383 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sikander PlayX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script type="text/javascript">
+      window.hasMobileFirstExtension = true;
+    </script>
+  </head>
+  <body>
+    <div
+      class="home-header d-flex justify-content-between align-items-center pt-4 z-3 page-header"
+    >
+      <a
+        href="deposite.html"
+        class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center"
+      >
+        <img src="../img/icon/icon-deposit.png" width="14" />
+        <span class="ms-2 pl-5">Deposit</span>
+      </a>
+      <a href="./main_new_page.html">
+        <img src="../img/home-x-logo.png" class="logo_xnew position-relative" />
+      </a>
+
+      <a
+        href="withdrawal.html"
+        class="btn btn-sm btn-grnd text-white fs-12 d-flex align-items-center"
+      >
+        <img
+          src="../img/icon/icon-withdrawal.png"
+          width="14"
+          style="color: white"
+        />
+        <span class="ms-2">Withdrawal</span>
+      </a>
+    </div>
+    <div class="home-header-bg-area h-66"></div>
+
+    <!-- <div class="home-header-bg-area h-66"></div> -->
+    <div class="container container-xs home-bg vh-100">
+      <!-- <div class="app-header">
+              <div class="app-nav-bar">
+                  <div class="app-nav-ba__wrapper">
+                      <a href="withdrawal.html" class="app-nav-bar__link">
+                          <img src="../img/icon/icon-left-arrow.png" />
+                      </a>
+                      <span class="app-nav-bar__title">Add account</span>
+                  </div>
+                  <div>
+                      <img src="../img/header-nav-x.png" />
+                  </div>
+              </div>
+          </div> -->
+      <!-- <div class="app-header-bg-area"></div> -->
+      <div class="app-main py-2" style="overflow-x: hidden">
+        <div class="row gx-1">
+          <div class="col">
+            <a
+              href="withdrawal.html"
+              class="w-100 btn btn-sm btn-grey flex-grow-1 fw-600 fs-10 fst-italic me-1 mb-2 px-1"
+              >Withdrawal</a
+            >
+          </div>
+          <div class="col">
+            <a
+              href="addAccount.html"
+              class="w-100 btn btn-sm bg-yellow flex-grow-1 fw-600 fs-10 fst-italic me-1 mb-2 px-1"
+              >Add Account</a
+            >
+          </div>
+        </div>
+
+        <div class="text-white fw-600 mb-3">Add Bank</div>
+        <div class="bank-detail mb-3">
+          <div class="bank-detail__row">
+            <div class="bank-detail__label">
+              <span class="text-black fw-600">Bank name 1</span>
+              <img src="../img/icon/icon-bank.png" />
+            </div>
+            <div class="bank-detail__data">
+              <select class="select-bank-detail">
+                <option>Axis Bank Of India</option>
+                <option>ICICI Band</option>
+                <option>Fedal Bank</option>
+              </select>
+            </div>
+          </div>
+          <div class="ban-detail-other">
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C Holder Name</span>
+                <img src="../img/icon/icon-profile-circle.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="Sikander" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C No.</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="987654321" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">IFSC</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="75896412536547" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center mb-4">
+          <a href="#" class="btn bg-yellow rounded-pill px-3">
+            <span
+              class="fw-700 fst-italic add_account_btn"
+              data-bs-toggle="modal"
+              data-bs-target="#payment"
+              >Add Bank</span
+            >
+          </a>
+        </div>
+
+        <div class="text-white fw-600 mb-3">Added Bank</div>
+        <div class="bank-detail mb-3">
+          <div class="bank-detail__row">
+            <div class="bank-detail__label">
+              <span class="text-black fw-600">Bank name 1</span>
+              <img src="../img/icon/icon-bank.png" />
+            </div>
+            <div class="bank-detail__data">
+              <select class="select-bank-detail text-black">
+                <option>Axis Bank Of India</option>
+                <option>ICICI Band</option>
+                <option>Fedal Bank</option>
+              </select>
+            </div>
+          </div>
+          <div class="ban-detail-other">
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C Holder Name</span>
+                <img src="../img/icon/icon-profile-circle.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="Sikander" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C No.</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="987654321" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">IFSC</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="75896412536547" />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button class="btn-text fw-500 fst-italic fs-10">Edit</button>
+            <button
+              class="btn-text fw-500 fst-italic fs-10 ms-3"
+              data-bs-toggle="modal"
+              data-bs-target="#deletepop"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <div class="bank-detail mb-3">
+          <div class="bank-detail__row">
+            <div class="bank-detail__label">
+              <span class="text-black fw-600"> Bank name 2</span>
+              <img src="../img/icon/icon-bank.png" />
+            </div>
+            <div class="bank-detail__data">
+              <select class="select-bank-detail text-black">
+                <option>ICICI Band</option>
+                <option>Fedal Bank</option>
+                <option>Axis Bank Of India</option>
+              </select>
+            </div>
+          </div>
+          <div class="ban-detail-other">
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C Holder Name</span>
+                <img src="../img/icon/icon-profile-circle.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="Sikander" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C No.</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="987654321" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">IFSC</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="75896412536547" />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button class="btn-text fw-500 fst-italic fs-10">Edit</button>
+            <button
+              class="btn-text fw-500 fst-italic fs-10 ms-3"
+              data-bs-toggle="modal"
+              data-bs-target="#deletepop"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+
+        <div class="bank-detail mb-3">
+          <div class="bank-detail__row">
+            <div class="bank-detail__label">
+              <span class="text-black fw-600">Bank name 3</span>
+              <img src="../img/icon/icon-bank.png" />
+            </div>
+            <div class="bank-detail__data">
+              <select class="select-bank-detail text-black">
+                <option>Fedal Bank</option>
+                <option>ICICI Band</option>
+                <option>Axis Bank Of India</option>
+              </select>
+            </div>
+          </div>
+          <div class="ban-detail-other">
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C Holder Name</span>
+                <img src="../img/icon/icon-profile-circle.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="Sikander" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">A/C No.</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="987654321" />
+              </div>
+            </div>
+            <div class="bank-detail__row">
+              <div class="bank-detail__label">
+                <span class="text-black fw-600">IFSC</span>
+                <img src="../img/icon/icon-text-list.png" />
+              </div>
+              <div class="bank-detail__data">
+                <input type="text" value="75896412536547" />
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <button class="btn-text fw-500 fst-italic fs-10">Edit</button>
+            <button
+              class="btn-text fw-500 fst-italic fs-10 ms-3"
+              data-bs-toggle="modal"
+              data-bs-target="#deletepop"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-tab flex-grow-1 after-line">
+          <a href="main_new_page.html" class="tab-action">
+            <img src="../img/icon/icon-x.svg" class="tab-icon" />
+            <div class="tab-label">Home</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 after-line">
+          <a href="./inplay.html" class="tab-action">
+            <img src="../img/icon/icon-play.svg" class="tab-icon" />
+            <div class="tab-label">In-Play</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1">
+          <a href="./refer&amp;earn.html" class="tab-action">
+            <img src="../img/icon/icon-refer.svg" class="tab-icon" />
+            <div class="tab-label">Refer &amp; Earn</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 before-line">
+          <a href="./livecasino.html" class="tab-action">
+            <img src="../img/icon//icon-casino.svg" class="tab-icon" />
+            <div class="tab-label">Casino</div>
+          </a>
+        </div>
+        <div class="footer-tab flex-grow-1 before-line">
+          <a href="menu.html" class="tab-action">
+            <img src="../img/icon/icon-menu-bar-active.svg" class="tab-icon" />
+            <div class="tab-label" style="margin-bottom: -8px">Menu</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="payment" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+      >
+        <div class="modal-content" style="width: 200px">
+          <div class="modal-body d-flex flex-column align-items-center">
+            <img src="../img/success.png" class="mb-2 ml-n25" />
+            <div class="fw-600 fs-11 text-center text-black mb-3">
+              Succesfully Done
+            </div>
+            <span
+              class="bg-green2 text-white fs-12 fw-600 rounded-3 py-2 px-3 mb-2"
+              >Thank You</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- delete [pop] -->
+    <div class="modal fade" id="deletepop" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered modal-sm justify-content-center"
+      >
+        <div class="modal-content" style="width: 200px">
+          <div
+            class="modal-body d-flex flex-column align-items-center justify-content-end"
+          >
+            <div class="d-flex justify-content-end w-75">
+              <img src="../img/delete.png" class="mb-2 ml-n25 w-100" />
+            </div>
+
+            <div class="fw-600 fs-11 text-center text-black mb-3">
+              Are You Sure You Want to Delete Your Account?
+            </div>
+            <span
+              class="bg-alert text-white fs-12 fw-600 rounded-3 py-2 px-3 mb-2"
+              style="background: #8d0378"
+              >Yes, Delete</span
+            >
+            <span class="text-dard-grey fs-9 fw-600">Keep Account</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
